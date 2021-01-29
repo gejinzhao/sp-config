@@ -2,6 +2,12 @@ spring:
   application:
     name: item-service
     
+    rabbitmq:
+    host: http://127.0.0.1/
+    port: 15672
+    username: guest
+    password: guest
+    
 #server:
 #  port: 8001
   
