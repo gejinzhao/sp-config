@@ -3,10 +3,10 @@ spring:
     name: item-service
     
     rabbitmq:
-    host: http://127.0.0.1/
-    port: 15672
-    username: guest
-    password: guest
+      host: http://127.0.0.1/
+      port: 15672
+      username: guest
+      password: guest
     
 #server:
 #  port: 8001
@@ -28,3 +28,9 @@ spring:
 
 server:
   port: 8002
+  
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
